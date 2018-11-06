@@ -17,6 +17,65 @@
         <div class="preloader"><div></div></div>
         <!-- -->
 
+        <!-- NAV BAR -->
+        <nav class="navbar sticky transparent-white">
+            <div class="container fluid-container hidden-md">
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="ul-h nav-menu nav-menu-right">
+                            <li><a href="#hero" class="btn-scroll">Home</a></li>
+                            <li><a href="#about" class="btn-scroll">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="hero-logo">
+                            <div class="logo-img">
+                                <!-- <img src="img/logo.png" class="logo-white" alt="#">
+                                <img src="img/logo-dark.png" class="logo-black" alt="#"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="ul-h nav-menu nav-menu-left">
+                            <li><a href="#speakers" class="btn-scroll">Speakers</a></li>
+                            <li><a href="#agenda" class="btn-scroll">Agenda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsed Navigation Bar -->
+            <nav class="navbar navbar-collaps">
+                <div class="container fluid-container">
+                    <div class="collapsed-hero-logo">
+                        <div class="logo-img">
+                            <!-- <img src="img/logo-dark.png" alt="#"> -->
+                        </div>
+                    </div>
+                    <div class="hamburger-menu">
+                        <button type="button" class="hamburger-btn clicked">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Collapsed Dropdown -->
+                <div class="collapsed-dropdown">
+                    <ul class="ul-v">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                    </ul>
+                </div>
+                <!-- -->
+            </nav>
+            <!-- -->
+        </nav>
+        <!-- -->
+
         <!-- HERO -->
         <section id="hero" class="parallax hero-fullscreen bg-white">
             <div class="background-image">
@@ -36,10 +95,15 @@
                     </div>
                     <div class="row">
                       <div class="col-md-4 services-text-block text-center m-auto mt10">
-                          <a href="https://twitter.com/melonport" target="_blank" class="main-button button-hero">
+
+                        <a class="typeform-share button main-button button-hero" href="https://ahmadafandi.typeform.com/to/rhTaU6" data-mode="popup" target="_blank">
+                         Fill The Application Form
+                        </a>
+                        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                          <!-- <a href="https://twitter.com/melonport" target="_blank" class="main-button button-hero">
                             Tickets Coming Soon<br/>
                             <span class="button-text">follow us on Twitter for updates!</span>
-                          </a>
+                          </a> -->
                       </div>
                     </div>
                     <!-- <a href="#about" class="btn-scroll"><div class="hero-scroll"><img src="img/arrow_down.png"></div></a> -->
