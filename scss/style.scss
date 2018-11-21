@@ -714,7 +714,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
     letter-spacing: -4px;
 }
 .h1-lg {
-    font: 500 140px 'Ubuntu';
+    font: 500 100px 'Ubuntu';
     letter-spacing: .5px;
     text-transform: uppercase;
 }
@@ -768,7 +768,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 }
 /*-- H5 --*/
 .h5-lg {
-    font: 500 30px 'Ubuntu', sans-serif;
+    font: 500 25px 'Ubuntu', sans-serif;
 }
 .h5-md {
     font: 400 18px 'Ubuntu', sans-serif;
@@ -807,6 +807,7 @@ p {
 	line-height: 0.78;
 	text-align: center;
 	color: #ffffff;
+  letter-spacing: 4px;
 }
 .paragraph-text{
   font-family: Ubuntu;
@@ -814,37 +815,40 @@ p {
 	line-height: 1.56;
 	text-align: center;
 	color: rgb(156, 156, 156);
+  letter-spacing: 0.5px;
 }
 .speaker-name {
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     text-align: left;
     color: rgb(255, 255, 255);
+    letter-spacing: 2px;
 }
 .speaker-title {
     font-family: Ubuntu;
     font-size: 16px;
     line-height: 1.38;
     text-align: left;
-    color: rgb(193, 193, 193);
+    color: #fff;
     font-weight: 200;
+    letter-spacing: 1px;
 }
 .speaker-bio {
     font-family: Ubuntu;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: rgb(96, 96, 96);
+    color: #909090;
     font-weight: 200;
-    padding-right: 30px;
+    padding-right: 20px;
+    letter-spacing: 0.5px;
 }
 .speaker-bio p.read-more-wrap{
     font-family: Ubuntu;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: rgb(96, 96, 96);
     font-weight: 200;
 }
 .custom-link{
@@ -854,6 +858,216 @@ p {
   font-weight: 700;
   color: #ffffff;
 }
+.custom-link-2{
+  color: #fff;
+  text-decoration: underline;
+}
+.custom-link-2:hover{
+  color: #ffffff;
+}
+.image-wrapper{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.speaker-img{
+  width: 100%;
+}
+.speakers-new{
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* Tooltip */
+[data-tooltip],
+.tooltip {
+  cursor: pointer;
+}
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+    -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+    -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+    transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 20px;
+  width: 250px;
+  background-color: #fff;
+  color: #0b0b0b;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: Ubuntu;
+  font-weight: 200;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,
+.tooltip-top:before,
+.tooltip-top:after {
+  bottom: 100%;
+}
+
+[data-tooltip]:before,
+.tooltip:before,
+.tooltip-top:before {
+  margin-left: 1px;
+  margin-bottom: -50px;
+  border-top-color: #fff;
+}
+
+[data-tooltip]:after,
+.tooltip:after,
+.tooltip-top:after {
+  margin-left: -130px;
+  margin-bottom: -38px;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after,
+.tooltip-top:hover:before,
+.tooltip-top:hover:after,
+.tooltip-top:focus:before,
+.tooltip-top:focus:after {
+  -webkit-transform: translateY(-12px);
+  -moz-transform: translateY(-12px);
+  transform: translateY(-12px);
+}
+
+.tooltip-left:before,
+.tooltip-left:after {
+  right: 100%;
+  bottom: 50%;
+  left: auto;
+}
+
+.tooltip-left:before {
+  margin-left: 0;
+  margin-right: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-left-color: #000;
+  border-left-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-left:hover:before,
+.tooltip-left:hover:after,
+.tooltip-left:focus:before,
+.tooltip-left:focus:after {
+  -webkit-transform: translateX(-12px);
+  -moz-transform: translateX(-12px);
+  transform: translateX(-12px);
+}
+
+.tooltip-bottom:before,
+.tooltip-bottom:after {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+}
+
+.tooltip-bottom:before {
+  margin-top: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-bottom-color: #000;
+  border-bottom-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-bottom:hover:before,
+.tooltip-bottom:hover:after,
+.tooltip-bottom:focus:before,
+.tooltip-bottom:focus:after {
+  -webkit-transform: translateY(12px);
+  -moz-transform: translateY(12px);
+  transform: translateY(12px);
+}
+
+.tooltip-right:before,
+.tooltip-right:after {
+  bottom: 50%;
+  left: 100%;
+}
+
+.tooltip-right:before {
+  margin-bottom: 0;
+  margin-left: -12px;
+  border-top-color: transparent;
+  border-right-color: #000;
+  border-right-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-right:hover:before,
+.tooltip-right:hover:after,
+.tooltip-right:focus:before,
+.tooltip-right:focus:after {
+  -webkit-transform: translateX(12px);
+  -moz-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+.tooltip-left:before,
+.tooltip-right:before {
+  top: 3px;
+}
+
+.tooltip-left:after,
+.tooltip-right:after {
+  margin-left: 0;
+  margin-bottom: -16px;
+}
+
+
 
 /*---------- READ MORE ----------*/
 .read-more-state {
@@ -886,8 +1100,8 @@ p {
   display: inline-block;
   color: #c1c1c1;
   font-size: .9em;
-  line-height: 2;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 
 
@@ -1860,7 +2074,7 @@ ul#iconTabs li a span.icon-tab {
 /*---------- CONTENT ----------*/
 
 .hero-title {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: ubuntu;
   font-weight: 200;
@@ -1871,7 +2085,7 @@ ul#iconTabs li a span.icon-tab {
     font-size: 22px;
     font-family: ubuntu;
     font-weight: 200;
-    letter-spacing: 1.5px;
+    letter-spacing: 3.5px;
     margin-bottom: 0px;
 }
 .hero-scroll{
@@ -1896,7 +2110,9 @@ ul#iconTabs li a span.icon-tab {
 #hero .hero-content {
     padding-top: 50px;
 }
-
+.hero-subheading{
+  letter-spacing: 2px;
+}
 @media (max-width:992px){
   .hero-content .container {
       padding: 80px 0 !important;
@@ -2036,6 +2252,17 @@ li.active{
     font-weight: bold;
   }
 }
+.agenda-item{
+  font-size: 18px;
+  font-family: ubuntu;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  color:#9c9c9c;
+}
+
+
+
 .mail_send{
   font-weight: 500;
 }
