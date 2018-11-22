@@ -17,6 +17,65 @@
         <div class="preloader"><div></div></div>
         <!-- -->
 
+        <!-- NAV BAR -->
+        <nav class="navbar sticky transparent-white">
+            <div class="container fluid-container hidden-md">
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="ul-h nav-menu nav-menu-right">
+                            <li><a href="#hero" class="btn-scroll">Home</a></li>
+                            <li><a href="#about" class="btn-scroll">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="hero-logo">
+                            <div class="logo-img">
+                                <img src="img/logo-light-new.svg" style="width:80px; height:80px;" class="logo-white" alt="#">
+                                <img src="img/logo-dark-new.svg" style="width:80px; height:80px;" class="logo-black" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="ul-h nav-menu nav-menu-left">
+                            <li><a href="#speakers" class="btn-scroll">Speakers</a></li>
+                            <li><a href="#agenda" class="btn-scroll">Agenda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsed Navigation Bar -->
+            <nav class="navbar navbar-collaps">
+                <div class="container fluid-container">
+                    <div class="collapsed-hero-logo">
+                        <!-- <div class="logo-img">
+                            <img src="img/logo-dark.png" alt="#">
+                        </div> -->
+                    </div>
+                    <div class="hamburger-menu">
+                        <button type="button" class="hamburger-btn clicked">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Collapsed Dropdown -->
+                <div class="collapsed-dropdown">
+                    <ul class="ul-v">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                    </ul>
+                </div>
+                <!-- -->
+            </nav>
+            <!-- -->
+        </nav>
+        <!-- -->
+
         <!-- HERO -->
         <section id="hero" class="parallax hero-fullscreen bg-white">
             <div class="background-image">
@@ -62,7 +121,7 @@
         <!-- -->
 
         <!-- ABOUT -->
-        <!-- <section id="about" class="bg-black">
+        <section id="about" class="bg-black">
             <div class="container pt140 pb140">
                 <div class="row">
                     <div class="col-md-8 m-auto text-center">
@@ -84,11 +143,11 @@
                   </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- -->
 
         <!-- SPEAKERS -->
-        <!-- <section id="speakers" class="bg-gray">
+        <section id="speakers" class="bg-gray">
           <div class="container pt140 pb140">
             <div class="row">
               <div class="col-md-8 m-auto text-center">
@@ -244,11 +303,11 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
         <!-- -->
 
         <!-- AGENDA -->
-        <!-- <section id="agenda" class="bg-black">
+        <section id="agenda" class="bg-black">
             <div class="container pt140 pb140">
                 <div class="row">
                     <div class="col-md-6 m-auto text-center">
@@ -298,8 +357,15 @@
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="white">
+                    <div class="col-md-6 m-auto mt30 text-center box-info">
+                      <p>The Agenda is currently under construction. Follow us on  <a href="https://twitter.com/melonport" target="_blank" class="custom-link">twitter</a> or subscribe to our newsletter for updates</p>
+                    </div>
+                  </div>
+                </div>
             </div>
-        </section> -->
+        </section>
         <!-- -->
 
         <script src="js/jquery.js"></script>

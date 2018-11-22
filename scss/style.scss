@@ -823,7 +823,7 @@ p {
     font-weight: 500;
     text-align: left;
     color: rgb(255, 255, 255);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .speaker-title {
     font-family: Ubuntu;
@@ -2369,4 +2369,16 @@ li.active{
 }
 .load-more-container #load-more:checked ~ .load-more-btn .unloaded {
   display: none;
+}
+
+.box-info{
+  background: #191919;
+  padding:30px;
+  padding-top: 40px;
+  border-radius: 10px;
+}
+.box-info p{
+  color: #9c9c9c;
+  font-size: 16px;
+  font-style: italic;
 }
