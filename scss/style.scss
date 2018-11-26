@@ -878,6 +878,7 @@ p {
   padding-left: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #3a3a3a;
+  list-style: none;
 }
 
 
@@ -2333,9 +2334,9 @@ li.active{
   padding: 0;
 }
 .load-more-container ul:after {
-  content: "";
-  display: table;
-  clear: both;
+  // content: "";
+  // display: table;
+  // clear: both;
 }
 .load-more-container ul li {
   // width: calc(25% - 10px);
@@ -2348,7 +2349,8 @@ li.active{
 }
 .load-more-container ul li:nth-child(1n + 9) {
   max-height: 0;
-  opacity: 0;
+  // opacity: 0;
+  opacity: 1;
   transition: 0.1s ease-in;
 }
 .load-more-container .load-more-btn {
