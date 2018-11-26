@@ -932,7 +932,7 @@ p {
 [data-tooltip]:after {
   z-index: 1000;
   padding: 20px;
-  width: 250px;
+  width: 300px;
   background-color: #fff;
   color: #0b0b0b;
   content: attr(data-tooltip);
@@ -963,7 +963,7 @@ p {
 [data-tooltip]:after,
 .tooltip:after,
 .tooltip-top:after {
-  margin-left: -130px;
+  margin-left: -150px;
   margin-bottom: -38px;
 }
 
@@ -1261,8 +1261,22 @@ p {
     font-weight: 500;
     line-height: 1.22;
 }
-
-
+.th-checkout-button-2{
+    width: auto !important;
+    padding: 17px 50px 17px 50px !important;
+    border: solid 2px #fff !important;
+    background: #fff !important;
+    font-size: 20px;
+    font-family: Ubuntu;
+    border-radius: 0px !important;
+    font-weight: 500;
+    line-height: 1.22;
+    color: #252525 !important;
+}
+.th-checkout-button-2[disabled] .th-checkout-button-2-icon{
+  color:#252525 !important;
+  fill:#252525 !important;
+}
 
 
 
@@ -2282,12 +2296,12 @@ li.active{
   font-family: Ubuntu;
 	font-size: 17px;
 	line-height: 2.21;
-	text-align: center;
+	text-align: right;
 	color: #c1c1c1;
   font-weight: 300;
 }
 .footer-menu li{
-  margin-right: 50px;
+  margin-left: 50px;
 }
 .footer-menu li a:hover{
   color: #ffffff;
@@ -2381,4 +2395,58 @@ li.active{
   color: #9c9c9c;
   font-size: 16px;
   font-style: italic;
+}
+
+
+
+.map-fullscreen-home {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.map-fullscreen-single {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.travel-time{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #303030;
+  padding: 20px;
+}
+.paragraph-text-info {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.56;
+  text-align: center;
+  color: #9c9c9c;
+  letter-spacing: 0.5px;
+}
+.paragraph-text-right {
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #9c9c9c;
+    letter-spacing: 0.5px;
+    padding-left: 30px;
+}
+.paragraph-text-left {
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #9c9c9c;
+    letter-spacing: 0.5px;
+    padding-right: 30px;
+}
+.venue-detail li{
+  list-style: none;
+  color: #9c9c9c;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.pad-left-30{
+  padding-left: 30px;
 }
