@@ -78,6 +78,16 @@ button:focus {
         float: left;
     }
 }
+
+
+@media (min-width: 320px) and (max-width: 568px){
+    .speakers-new{padding-left: 0px !important;}
+}
+@media (min-width: 320px) and (max-width: 1280px){
+    .nav-menu{text-align: center !important;}
+    .footer-menu li{margin-left: 25px !important}
+}
+
 hr.separator {
     width: 100%;
     border-top: none;
