@@ -2550,7 +2550,7 @@ $easing: cubic-bezier(.55,0,.1,1);
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 999999999999;
     opacity:0;
     transition: opacity $speed $easing, visibility $speed $easing;
     background-color: rgba(#000, 0.7);
@@ -2573,7 +2573,7 @@ $easing: cubic-bezier(.55,0,.1,1);
 }
 @media (min-width:375px) and (max-width:800px){
   .speaker-dialog > div {
-    margin: 30% auto;
+    margin: 15% auto;
     width: 75%;
   }
   .mobile-hide{
