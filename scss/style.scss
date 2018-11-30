@@ -975,7 +975,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 [data-tooltip]:after,
 .tooltip:after,
 .tooltip-top:after {
-  margin-left: -150px;
+  margin-left: -283px;
   margin-bottom: -38px;
 }
 
@@ -2584,6 +2584,9 @@ $easing: cubic-bezier(.55,0,.1,1);
   .speaker-bio-detail{
     padding-right: 0px;
     height: 135px;
+  }
+  .th-checkout-button-1{
+    padding: 17px 25px 17px 25px !important;
   }
 }
 @media only screen
