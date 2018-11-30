@@ -832,7 +832,7 @@ p {
     font-size: 22px;
     font-weight: 500;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: #fff;
     letter-spacing: 1px;
 }
 .speaker-title {
@@ -840,7 +840,7 @@ p {
     font-size: 16px;
     line-height: 1.38;
     text-align: left;
-    color: #fff;
+    color: #999;
     font-weight: 200;
     letter-spacing: 1px;
 }
@@ -862,14 +862,14 @@ p {
     font-weight: 200;
 }
 .custom-link{
-  color: #ffffff;
+  color: #fff;
 }
 .custom-link:hover{
   font-weight: 700;
   color: #ffffff;
 }
 .custom-link-2{
-  color: #fff;
+  color: #999;
   text-decoration: underline;
 }
 .custom-link-2:hover{
@@ -880,6 +880,12 @@ p {
   height: 300px;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 2560px) {
+  .image-wrapper-detail {
+    text-align: center;
+    margin: 0px auto;
+  }
 }
 .speaker-img{
   width: 100%;
@@ -2472,4 +2478,159 @@ li.active{
 }
 .pad-left-30{
   padding-left: 30px;
+}
+
+
+
+/* Speakers Bio */
+.tooltip {
+	display: inline;
+	position: relative;
+	z-index: 999;
+}
+
+/* Trigger text */
+
+.tooltip-item {
+	color: #2fa0ec;
+	cursor: pointer;
+	z-index: 100;
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+	-webkit-transition: background-color 0.3s, color 0.3s, -webkit-transform 0.3s;
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.tooltip:hover .tooltip-item {
+	color: #fff;
+	-webkit-transform: translate3d(0,-0.5em,0);
+	transform: translate3d(0,-0.5em,0);
+}
+
+/* Tooltip */
+.tooltip {
+	display: inline;
+	position: relative;
+	z-index: 999;
+}
+
+/* Trigger text */
+
+.tooltip-item {
+	background: rgba(0,0,0,0.3);
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 700;
+	padding: 0 10px;
+}
+
+/* Gap filler */
+
+.tooltip-item::after {
+	content: '';
+	position: absolute;
+	width: 360px;
+	height: 20px;
+	bottom: 100%;
+	left: 50%;
+	pointer-events: none;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltip-item::after {
+	pointer-events: auto;
+}
+
+/* Speaker Profile */
+
+
+$speed: 0.6s;
+$delay: ($speed * .5);
+$easing: cubic-bezier(.55,0,.1,1);
+.speaker-dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    opacity:0;
+    transition: opacity $speed $easing, visibility $speed $easing;
+    background-color: rgba(#000, 0.7);
+    pointer-events: none;
+}
+
+.speaker-dialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.speaker-dialog > div {
+    width: 50%;
+    position: relative;
+    margin: 5% auto;
+    padding: 0px 30px 30px 30px;
+    background: #fff;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(#000, 0.1);
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding-top: 6px;
+  background: #fff;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.close:hover{
+  text-shadow: none;
+  color: #fff;
+  background: #999999;
+  border-radius: 90px;
+}
+.speaker-name label{
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+.speaker-name-detail {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    color: #252525;
+    letter-spacing: 1px;
+}
+.speaker-title-detail {
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: left;
+    color: #999999;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.speaker-bio-detail {
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    color: #999999;
+    font-weight: 200;
+    padding-right: 40px;
+    letter-spacing: 0.7px;
+    height: 220px;
+    overflow: scroll;
+}
+.custom-link-3 {
+    color: #000;
+    text-decoration: underline;
 }
