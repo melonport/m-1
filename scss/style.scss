@@ -2576,9 +2576,9 @@ $easing: cubic-bezier(.55,0,.1,1);
     height: auto;
     box-shadow: 0 2px 10px rgba(#000, 0.1);
 }
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:480px) and (max-width:800px){
   .speaker-dialog > div {
-    margin: 10% auto;
+    margin: 30% auto;
     width: 75%;
   }
   .mobile-hide{
