@@ -2584,6 +2584,19 @@ $easing: cubic-bezier(.55,0,.1,1);
     height: 135px;
   }
 }
+@media only screen
+and (min-width : 375px)
+and (max-width : 667px)
+and (orientation : landscape){
+  .speaker-dialog > div {
+    margin: 5% auto;
+    width: 80%;
+  }
+  .speaker-bio-detail{
+    padding-right: 0px;
+    height: 100px;
+  }
+}
 
 .close {
   color: #aaa;
