@@ -2539,7 +2539,9 @@ li.active{
 }
 
 /* Speaker Profile */
-
+ul.speakers-list{
+  padding-left: 0px;
+}
 
 $speed: 0.6s;
 $delay: ($speed * .5);
