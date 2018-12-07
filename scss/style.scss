@@ -882,6 +882,14 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
     margin: 0px auto;
   }
 }
+.hero-sub-title-text{
+  font-size: 20px;
+  font-family: ubuntu;
+  font-weight: 200;
+  letter-spacing: 3.5px;
+  margin-bottom: 0px;
+  color: #9c9c9c;
+}
 .speaker-img{
   width: 100%;
 }
@@ -892,8 +900,8 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
   list-style: none;
 }
 .image-wrapper-round{
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   position: relative;
   overflow: hidden;
   border-radius: 90px;
@@ -926,11 +934,21 @@ li.speakers-list-new {
 .speaker-name-list {
     font-family: Ubuntu;
     font-size: 14px;
-    color: #9c9c9c;
+    color: #fff;
     letter-spacing: 1px;
     margin: 0px auto;
     text-align: center;
     transition: 0.5s;
+}
+.speaker-company-list{
+  font-family: Ubuntu;
+  font-size: 13px;
+  color: #9c9c9c;
+  letter-spacing: 1px;
+  margin: 0px auto;
+  text-align: center;
+  transition: 0.5s;
+  margin-top: 5px;
 }
 .agenda-title-text {
     font-size: 22px;
