@@ -805,6 +805,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
     transition: color .2s;
 
 }
+
 .heading-title{
 	font-family: Ubuntu;
 	font-size: 32px;
@@ -900,8 +901,8 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
   list-style: none;
 }
 .image-wrapper-round{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: relative;
   overflow: hidden;
   border-radius: 90px;
@@ -930,7 +931,9 @@ li.speakers-list-new {
 .speakers-list-new:hover .speaker-name-list{
   color: #222222;
 }
-
+.speakers-list-new:hover .on-keynotes{
+  color: #222222;
+}
 .speaker-name-list {
     font-family: Ubuntu;
     font-size: 14px;
