@@ -2767,3 +2767,22 @@ and (orientation : landscape){
     color: #252525;
     letter-spacing: 1px;
 }
+.speaker-name-list-keynote {
+    font-family: Ubuntu;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0px auto;
+    text-align: left;
+    transition: 0.5s;
+}
+.speaker-company-list-keynote {
+    font-family: Ubuntu;
+    font-size: 15px;
+    color: #9c9c9c;
+    letter-spacing: 1px;
+    margin: 0px auto;
+    text-align: left;
+    transition: 0.5s;
+    margin-top: 5px;
+}
