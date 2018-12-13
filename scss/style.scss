@@ -934,6 +934,9 @@ li.speakers-list-new {
 .speakers-list-new:hover .on-keynotes{
   color: #222222;
 }
+.on-keynotes{
+  font-size: 14px;
+}
 .speaker-name-list {
     font-family: Ubuntu;
     font-size: 14px;
@@ -959,6 +962,20 @@ li.speakers-list-new {
     font-weight: 200;
     letter-spacing: 2.5px;
     margin-bottom: 0px;
+}
+.agenda-title-text-keynotes {
+    font-size:18px;
+    font-family: ubuntu;
+    font-weight: 200;
+    margin-bottom: 0px;
+    letter-spacing: 2.5px;
+    height: 125px;
+    display: table;
+    color: #fff;
+}
+.agenda-title-text-keynotes span {
+    vertical-align:middle;
+    display: table-cell;
 }
 .speaker-wrap {
 	position: relative;
