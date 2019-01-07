@@ -2702,17 +2702,17 @@ $easing: cubic-bezier(.55,0,.1,1);
 .app-form{
   margin-top: 50px;
 }
-@media (min-width:375px) and (max-width:800px){
+@media (min-width:320px) and (max-width:800px){
   .speaker-dialog > div {
     margin: 15% auto;
-    width: 75%;
+    width: 80%;
   }
   .mobile-hide{
     display: none;
   }
   .speaker-bio-detail{
     padding-right: 0px;
-    height: 135px;
+    min-height: 135px;
   }
   .th-checkout-button-1{
     padding: 17px 25px 17px 25px !important;
@@ -2728,7 +2728,7 @@ and (orientation : landscape){
   }
   .speaker-bio-detail{
     padding-right: 0px;
-    height: 80px;
+    min-height: 80px;
   }
 }
 
