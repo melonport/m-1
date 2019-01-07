@@ -2705,7 +2705,7 @@ $easing: cubic-bezier(.55,0,.1,1);
 @media (min-width:320px) and (max-width:800px){
   .speaker-dialog > div {
     margin: 15% auto;
-    width: 80%;
+    width: 90%;
   }
   .mobile-hide{
     display: none;
@@ -2733,7 +2733,7 @@ and (orientation : landscape){
 }
 
 .close {
-  color: #aaa;
+  color: #252525;
   position: absolute;
   right: 15px;
   top: 15px;
